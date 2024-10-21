@@ -1,0 +1,79 @@
+
+
+
+@mixin flex-row {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+@mixin flex-column {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.monthly {
+    left: calc(100% - 29px) !important;
+}
+
+
+
+
+main {
+    background-color: #F7F7FE;
+    text-align: center;
+    padding: 64px 24px 71px 24px;
+    box-sizing: border-box;
+
+    header {
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #6E728E;
+            margin-bottom: 40px;
+        }
+
+        .annually-monthly--div {
+            @include flex-row();
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            
+
+            .toggle--div {
+                width: 53px;
+                height: 32px;
+                background-color: #A2A7F0;
+                border-radius: 33px;
+                position: relative;
+    
+                .toggle--circle {
+                    width: 24px;
+                    height: 24px;
+                    background-color: #F7F7FE;
+                    border-radius: 50%;
+    
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 5px;
+                    transition: all 0.2s;
+                }
+    
+            }
+
+
+            p {
+                font-size: 15px;
+                font-weight: 700;
+                color: rgba(110, 114, 142, 0.5);
+            }
+        }
+
+    }
+}
