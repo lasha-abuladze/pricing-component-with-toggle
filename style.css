@@ -40,3 +40,72 @@ main {
       font-size: 15px;
       font-weight: 700;
       color: rgba(110, 114, 142, 0.5); }
+  main .price-cards--container {
+    margin-top: 80px; }
+    main .price-cards--container .price-card--card {
+      background-color: #fff;
+      box-shadow: 0px 20px 40px 0px rgba(212, 210, 244, 0.5);
+      border-radius: 10px;
+      padding: 31px 29px;
+      box-sizing: border-box;
+      margin-bottom: 32px; }
+      main .price-cards--container .price-card--card:last-child {
+        margin: 0px; }
+      main .price-cards--container .price-card--card p {
+        font-size: 18px;
+        font-weight: 700;
+        color: #6E728E;
+        margin-bottom: 24px; }
+      main .price-cards--container .price-card--card strong {
+        font-size: 72px;
+        font-weight: 700;
+        color: #4A4D60;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 32px; }
+        main .price-cards--container .price-card--card strong span {
+          font-size: 40px !important; }
+      main .price-cards--container .price-card--card ul {
+        margin-bottom: 32px; }
+        main .price-cards--container .price-card--card ul li {
+          width: 100%;
+          height: 53px;
+          border-top: 1px solid #6E728E;
+          display: flex !important;
+          flex-direction: row !important;
+          align-items: center;
+          justify-content: center;
+          font-size: 15px;
+          font-weight: 700;
+          color: #6E728E; }
+          main .price-cards--container .price-card--card ul li:last-child {
+            border-bottom: 1px solid #6E728E; }
+      main .price-cards--container .price-card--card button {
+        width: 100%;
+        height: 44px;
+        border-radius: 6px;
+        background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+        color: #fff;
+        font-size: 13px;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        letter-spacing: 1.3px; }
+    main .price-cards--container .pink--card {
+      background: linear-gradient(135deg, #A2A7F0 0.06%, #696EDD 100.06%);
+      background-color: red; }
+      main .price-cards--container .pink--card p {
+        color: #fff; }
+      main .price-cards--container .pink--card strong {
+        color: #fff; }
+      main .price-cards--container .pink--card ul li {
+        color: #fff;
+        border-top: 1px solid #fff; }
+        main .price-cards--container .pink--card ul li:last-child {
+          border-bottom: 1px solid #fff; }
+      main .price-cards--container .pink--card button {
+        background: #fff;
+        color: #6D72DE; }

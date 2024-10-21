@@ -76,4 +76,110 @@ main {
         }
 
     }
+
+
+    .price-cards--container {
+        margin-top: 80px;
+
+        .price-card--card {
+            background-color: #fff;
+            box-shadow: 0px 20px 40px 0px rgba(212, 210, 244, 0.50);
+            border-radius: 10px;
+            padding: 31px 29px;
+            box-sizing: border-box;
+            margin-bottom: 32px;
+
+            &:last-child {
+                margin: 0px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 700;
+                color: #6E728E;
+                margin-bottom: 24px;
+            }
+
+            strong {
+                font-size: 72px;
+                font-weight: 700;
+                color: #4A4D60;
+                @include flex-row();
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                margin-bottom: 32px;
+
+                span {
+                    font-size: 40px !important;
+                }
+            }
+
+            ul {
+                margin-bottom: 32px;
+
+                li {
+                    width: 100%;
+                    height: 53px;
+                    border-top: 1px solid #6E728E;
+                    @include flex-row();
+                    align-items: center;
+                    justify-content: center;
+
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: #6E728E;
+
+                    &:last-child {
+                        border-bottom: 1px solid #6E728E;
+                    }
+                }
+            }
+
+            button {
+                width: 100%;
+                height: 44px;
+                border-radius: 6px;
+                background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+
+                color: #fff;
+                font-size: 13px;
+                font-weight: 700;
+                border: none;
+                cursor: pointer;
+                letter-spacing: 1.3px;
+            }
+
+
+        }
+
+        .pink--card {
+            background: linear-gradient(135deg, #A2A7F0 0.06%, #696EDD 100.06%);
+            background-color: red;
+
+            p {
+                color: #fff;
+            }
+
+            strong {
+                color: #fff;
+            }
+
+            ul {
+                li {
+                    color: #fff;
+                    border-top: 1px solid #fff;
+
+                    &:last-child {
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+
+            button {
+                background: #fff;
+                color: #6D72DE;
+            }
+        }
+    }
 }
