@@ -1,11 +1,11 @@
 body {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  background-color: #F7F7FE; }
 
 .monthly {
   left: calc(100% - 29px) !important; }
 
 main {
-  background-color: #F7F7FE;
   text-align: center;
   padding: 64px 24px 71px 24px;
   box-sizing: border-box; }
@@ -41,6 +41,8 @@ main {
       font-weight: 700;
       color: rgba(110, 114, 142, 0.5); }
   main .price-cards--container {
+    max-width: 600px;
+    margin: auto;
     margin-top: 80px; }
     main .price-cards--container .price-card--card {
       background-color: #fff;
@@ -109,3 +111,21 @@ main {
       main .price-cards--container .pink--card button {
         background: #fff;
         color: #6D72DE; }
+
+@media (min-width: 1024px) {
+  main .price-cards--container {
+    max-width: 1050px;
+    display: flex;
+    gap: 20px; }
+    main .price-cards--container .price-card--card {
+      margin-bottom: 0px;
+      width: 100%; }
+      main .price-cards--container .price-card--card strong {
+        font-size: 60px; } }
+
+@media (min-width: 1150px) {
+  main .price-cards--container {
+    max-width: 1090px;
+    gap: 0px; }
+  main .pink--card {
+    transform: scaleY(1.1); } }
