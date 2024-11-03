@@ -25,7 +25,8 @@ main {
       height: 32px;
       background-color: #A2A7F0;
       border-radius: 33px;
-      position: relative; }
+      position: relative;
+      cursor: pointer; }
       main header .annually-monthly--div .toggle--div .toggle--circle {
         width: 24px;
         height: 24px;
@@ -59,7 +60,6 @@ main {
         color: #6E728E;
         margin-bottom: 24px; }
       main .price-cards--container .price-card--card strong {
-        font-size: 72px;
         font-weight: 700;
         color: #4A4D60;
         display: flex !important;
@@ -69,7 +69,10 @@ main {
         gap: 5px;
         margin-bottom: 32px; }
         main .price-cards--container .price-card--card strong span {
-          font-size: 40px !important; }
+          font-size: 40px !important;
+          order: 1; }
+        main .price-cards--container .price-card--card strong .price {
+          font-size: 72px !important; }
       main .price-cards--container .price-card--card ul {
         margin-bottom: 32px; }
         main .price-cards--container .price-card--card ul li {
@@ -95,7 +98,12 @@ main {
         font-weight: 700;
         border: none;
         cursor: pointer;
-        letter-spacing: 1.3px; }
+        letter-spacing: 1.3px;
+        transition: all 0.2s !important; }
+        main .price-cards--container .price-card--card button:hover {
+          background: none;
+          border: 1px solid #6D72DE;
+          color: #6D72DE; }
     main .price-cards--container .pink--card {
       background: linear-gradient(135deg, #A2A7F0 0.06%, #696EDD 100.06%);
       background-color: red; }
@@ -111,6 +119,10 @@ main {
       main .price-cards--container .pink--card button {
         background: #fff;
         color: #6D72DE; }
+        main .price-cards--container .pink--card button:hover {
+          background: none;
+          border: 1px solid #fff;
+          color: #fff; }
 
 @media (min-width: 1024px) {
   main .price-cards--container {

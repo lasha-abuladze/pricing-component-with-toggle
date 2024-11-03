@@ -44,6 +44,7 @@ main {
             justify-content: center;
             gap: 15px;
             
+            
 
             .toggle--div {
                 width: 53px;
@@ -51,6 +52,7 @@ main {
                 background-color: #A2A7F0;
                 border-radius: 33px;
                 position: relative;
+                cursor: pointer;
     
                 .toggle--circle {
                     width: 24px;
@@ -103,7 +105,6 @@ main {
             }
 
             strong {
-                font-size: 72px;
                 font-weight: 700;
                 color: #4A4D60;
                 @include flex-row();
@@ -114,6 +115,11 @@ main {
 
                 span {
                     font-size: 40px !important;
+                    order: 1;
+                }
+
+                .price {
+                    font-size: 72px !important;
                 }
             }
 
@@ -150,6 +156,13 @@ main {
                 border: none;
                 cursor: pointer;
                 letter-spacing: 1.3px;
+                transition: all 0.2s !important;
+
+                &:hover {
+                    background: none;
+                    border: 1px solid #6D72DE;
+                    color: #6D72DE;
+                }
             }
 
 
@@ -181,6 +194,12 @@ main {
             button {
                 background: #fff;
                 color: #6D72DE;
+
+                &:hover {
+                    background: none;
+                    border: 1px solid #fff;
+                    color: #fff;
+                }
             }
         }
     }
